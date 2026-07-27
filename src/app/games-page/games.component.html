@@ -1,65 +1,117 @@
 <html>
-    <body>  
-        <div class = "background">
-            <img src="assets/regularSmileLarge.png" class="height">
-        </div>
-        <div class="main">
-            <div class="container">
-                <h1>My Portfolio of Games</h1>
-                <h3>All of my games have been developed in the Unity engine.</h3>
-                <h3>Click any of the buttons below to be taken to the related game's page.</h3>
-
-                <br />
-                <div class = "gameContainer">
-                    <p>2025</p>
-                    <img src = "assets/security-room/button_text.png" (click)="goToLink('/games/security-room')">
-                    <div class="vertical-line"></div>
+    <body>
+        <h1>My Games</h1>
+        <p>
+            This is the list of games that I have developed or have currently in development, sorted by release date.
+            <br />
+            <br />
+            Click on any of the games below to be taken to their respective page.
+        </p>
+        <hr>
+        <a href="/games/eden">
+            <div class="game">
+                <div class="game-text">
+                    <h2>EDEN</h2>
+                    <h4>Buddy: Chapter 3</h4>
+                    <p>A tense first-person survival horror experience.</p>
+                    <p style="font-size: 12px;">In development</p>
                 </div>
-
-                <div class = "gameContainer">
-                    <p></p>
-                    <img src = "assets/buddy/button_text_mobile.png" (click)="goToLink('/games/buddy')">
-                    <div class="vertical-line"></div>
-                    <div class="vertical-line-connector"></div>
+                <div class="game-image">
+                    <img src="../assets/eden/eden_icon.png" height="145px">
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2023</p>
-                    <img src = "assets/seven-favours/button_text.png" (click)="goToLink('/games/seven-favours')">
-                    <div class="vertical-line"></div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/security-room">
+            <div class="game">
+                <div class="game-text">
+                    <h2>The Security Room</h2>
+                    <h4>Buddy: Chapter 2</h4>
+                    <p>A hybrid of first-person and surveillance horror and the sequel to Buddy. Can you escape?</p>
+                    <p style="font-size: 12px;">Released: 2025<br/>Available on: Mac, Windows, Linux</p>
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2022</p>
-                    <img src = "assets/fumbling-wizard/button_text.png" (click)="goToLink('/games/fumbling-wizard')">
-                    <div class="vertical-line"></div>
+                <div class="game-image">
+                    <img src="../assets/security-room/game_icon.png" height="145px">
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2021</p>
-                    <img src = "assets/goobers/button_text.png" (click)="goToLink('/games/goobers')">
-                    <div class="vertical-line"></div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/buddy">
+            <div class="game">
+                <div class="game-text">
+                    <h2>Buddy</h2>
+                    <p>Meet your new best friend in this short point-and-click horror game.</p>
+                    <p style="font-size: 12px;">Released: 2020, 2025 (Mobile)<br/>Available on: Mac, Windows, Linux, Mobile</p>
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2020</p>
-                    <img src = "assets/cyberblaze/button_text.png" (click)="goToLink('/games/cyberblaze')">
-                    <div class="vertical-line"></div>
+                <div class="game-image">
+                    <img src="../assets/regularSmileProfpic.png" height="145px">
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2019</p>
-                    <img src = "assets/buddy/button_text.png" (click)="goToLink('/games/buddy')">
-                    <div class="vertical-line"></div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/seven-favours">
+            <div class="game">
+                <div class="game-text">
+                    <h2>Seven Favors</h2>
+                    <p>A fast paced hack-and-slash where you attempt to gain favor with God.</p>
+                    <p style="font-size: 12px;">Released: 2023 as part of Ludum Dare 52<br/>Available on: Mac, Windows, Linux, Web</p>
                 </div>
-
-                <div class = "gameContainer">
-                    <p>2016</p>
-                    <img src = "assets/slaughter-lands/button_text.png" (click)="goToLink('/games/slaughter-lands')">
-                    <!-- <div class="vertical-line"></div> -->
+                <div class="game-image">
+                    <img src="../assets/sevenfavours.png" height="145px">
                 </div>
-            </div> 
-        </div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/fumbling-wizard">
+            <div class="game">
+                <div class="game-text">
+                    <h2>The Fumbling Wizard</h2>
+                    <p>Delay the end of the world with an inconveniently organised set of wizarding tools.</p>
+                    <p style="font-size: 12px;">Released: 2022 as part of Ludum Dare 50<br/>Available on: Mac, Windows, Linux</p>
+                </div>
+                <div class="game-image">
+                    <img src="../assets/fumbling-wizard/fumblingwizardIcon.png" height="145px">
+                </div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/goobers">
+            <div class="game">
+                <div class="game-text">
+                    <h2>Goobers</h2>
+                    <p>A slime based platforming game where you have to rescue your fellow slime friends.</p>
+                    <p style="font-size: 12px;">Released: 2021 as part of the Brackeys 2021.1 Jam<br/>Available on: Windows, Web</p>
+                </div>
+                <div class="game-image">
+                    <img src="../assets/goobersIcon.png" height="145px">
+                </div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/cyberblaze">
+            <div class="game">
+                <div class="game-text">
+                    <h2>Cyberblaze</h2>
+                    <p>Defend the beacon at all costs in this wave defense game.</p>
+                    <p style="font-size: 12px;">Released: 2020<br/>Available on: Windows</p>
+                </div>
+                <div class="game-image">
+                    <img src="../assets/cyberblazeIcon.png" height="145px">
+                </div>
+            </div>
+        </a>
+        <hr>
+        <a href="/games/slaughter-lands">
+            <div class="game">
+                <div class="game-text">
+                    <h2>Slaughter Lands</h2>
+                    <p>How long can you survive in this Call Of Duty Zombies inspired shooter?</p>
+                    <p style="font-size: 12px;">Released: 2019<br/>Available on: Windows</p>
+                </div>
+                <div class="game-image">
+                    <img src="../assets/slaughterlandsIcon.png" height="145px">
+                </div>
+            </div>
+        </a>
     </body>
 </html>
-<router-outlet></router-outlet>

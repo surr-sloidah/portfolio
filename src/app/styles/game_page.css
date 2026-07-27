@@ -1,11 +1,18 @@
 html, body {
+    min-height: calc(100vh - 185px);
     height: 100%;
-    background-color: #5C5C5B;
+    /* background-color: #5C5C5B; */
+    color: white;
     margin: 0;
+    overflow-y: auto;
+}
+
+body {
+    margin: 24px;
 }
 
 .main {
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
     position: relative;
 }
@@ -15,6 +22,8 @@ html, body {
     font-size: 72px;
     color:#FFFFFF;
     margin-bottom: 0;
+    margin-top: 0px;
+
 }
 
 .main h2{
@@ -30,9 +39,8 @@ html, body {
 }
 
 .main p{
-    text-align: center;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -40,11 +48,17 @@ html, body {
     display: flex;
     flex-flow: column;
     min-height: calc(100vh - 40px);
-    margin-top: 40px;
 }
 
 .main a {
     color: red;
+    cursor: pointer;
+}
+
+iframe {
+    aspect-ratio: 1.77777777778;
+    width: 75%;
+    align-self: center;
 }
 
 @media (orientation:portrait){
@@ -84,7 +98,8 @@ html, body {
         /* width: 100vw; */
         /* position: relative; */
         margin: 0;
-        width: 80vw;
+        /* width: 80vw; */
+        width: 100%;
         height: auto;
     }
     
@@ -109,6 +124,10 @@ html, body {
         object-fit: cover;
     }
 
+    .screenshot {
+        width: 100%;
+    }
+
     .screenshothalf {
         width: 50%;
         height: 100%;
@@ -124,9 +143,11 @@ html, body {
     
     .screenshothalf img{
         display: block;
-        padding: 25px;
-        max-width: 32vw;
-        max-height: 18vw;
+        width: 95%;
+        height: auto;
+        margin-bottom: 16px;
+        /* max-width: 32vw; */
+        /* max-height: 18vw; */
     }
     
     .screenshothalf iframe{

@@ -1,0 +1,233 @@
+body {
+    overflow-y: auto;
+    scrollbar-gutter: stable both-edges;
+}
+
+.app-main {
+    background: url("../assets/thumbnail_plain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.top-of-page {
+    /* background: url("../assets/thumbnail_plain.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; */
+}
+
+.sloidah-text {
+    display: inline-block;
+    /* width: inherit; */
+    width: 257px;
+    justify-content: center;
+    /* height: auto; */
+    position: relative;
+}
+
+.sloidah-text #img1 {
+    transform: translate(0, 0px);
+}
+
+.sloidah-text #img2 {
+    transform: translate(0, 0px);
+}
+
+.sloidah-text:hover #img1 {
+    transform: translate(0, -12.5%);
+}
+
+.sloidah-text:hover #img2 {
+    transform: translate(0, 12.5%);
+}
+
+.sloidah-text:hover #img3 {
+    transform-origin: center;
+    margin: 0;
+    transform: scale(1, 1);
+}
+
+.sloidah-text #img3{
+    transform: scale(1, 0);
+    z-index: 0;
+}
+
+.sloidah-text img {
+    position: absolute;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.center {
+    width: 1000px;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(17, 17, 17);
+    margin: auto;
+    flex-direction: column;
+    font-family: 'VHS Gothic', sans-serif;
+    /* font-weight: bold; */
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+}
+
+#stretch {
+    font-width: ultra-condensed;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 145px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+.header div {
+    width: 100%;
+}
+
+.sloidah-image {
+    display: flex;
+    justify-content: center;
+}
+
+/* .center div {
+    width: 100%;
+} */
+
+.center .page-body{
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: rgb(180, 2, 2);
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: #dd0101;
+  inherits: false;
+}
+
+.navbar a {
+    width: 100%;
+    /* background-image: radial-gradient(circle, rgb(240, 49, 49), rgb(255, 156, 156)); */
+    background: radial-gradient(circle, var(--myColor1) 80%, var(--myColor2));
+    /* background-color: rgb(219, 143, 143); */
+    text-align: center;
+    padding: 0px;
+    transition: --myColor1 0.25s, --myColor2 0.25s;
+    transform: scale(1, 1.2);
+    z-index: 0;
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    /* transform: scale(1, 1.4); */
+    transition: --myColor1 0.25s, --myColor2 0.25s;
+    filter: brightness(100%);
+    /* background-color: red; */
+    z-index: 5;
+    --myColor1: rgb(255, 74, 74);
+    --myColor2: #dd0101;
+}
+
+#left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+}
+
+#right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: none;
+}
+
+.navbar a:visited {
+    color: black;
+}
+
+.dropdown a {
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #4199f1;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #1762ad;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+@media (orientation:portrait){
+    .center {
+        width: 100vw;
+        border-left: none;
+        border-right: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 145px;
+        margin: auto;
+    }
+
+    .sloidah-text {
+        display: flex;
+        /* width: inherit; */
+        width: 257px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 32px;
+        /* height: auto; */
+    }
+
+    .sloidah-text img {
+        width: inherit;
+        height: auto;
+    }
+}

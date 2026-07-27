@@ -14,6 +14,9 @@ import { BlogsComponent } from './blogs-page/blogs.component';
 import { BlogComponent } from './blog/blog.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { BuddyPrivacyPolicyComponent } from './games/buddy_privacypolicy/buddy_privacypolicy.component';
+import { EdenComponent } from './games/eden/eden.component';
+import { CollaboratorsComponent } from './collaborators/collaborators.component';
+import { SocialsComponent } from './socials/socials.component';
 
 const routes: Routes = [
   { 
@@ -21,17 +24,32 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        title: "Leif Kemp's Portfolio",
+        title: "surr sloidah",
         component: HomeComponent
       },
       {
+        path: 'collaborators',
+        title: "Collaborators",
+        component: CollaboratorsComponent
+      },
+      {
+        path: 'socials',
+        title: "Socials",
+        component: SocialsComponent
+      },
+      {
         path: 'games-list',
-        title: 'My Games',
+        title: 'Games',
         component: GamesComponent
       },
       {
         path: 'games',
         children: [
+          {
+            path: 'eden',
+            title: 'EDEN',
+            component: EdenComponent
+          },
           {
             path: 'seven-favours',
             title: 'Seven Favors',

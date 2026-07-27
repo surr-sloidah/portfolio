@@ -12,3 +12,14 @@ body {
 p {
     width: 100%;
 }
+
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    transition: all 0.125s;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(255, 136, 136);
+}
