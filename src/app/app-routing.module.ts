@@ -87,26 +87,26 @@ const routes: Routes = [
           }
         ]
       },
-      {
-        path: 'certifications',
-        title: 'Certifications',
-        component: CertificationsComponent
-      },
-      {
-        path: 'sandbox',
-        title: 'Sandbox',
-        component: SandboxComponent
-      },
-      {
-        path: 'blogs',
-        title: 'Blogs',
-        component: BlogsComponent,
-      },
-      {
-        path: 'blogs/:index',
-        title: 'Blog',
-        component: BlogComponent
-      },
+      // {
+      //   path: 'certifications',
+      //   title: 'Certifications',
+      //   component: CertificationsComponent
+      // },
+      // {
+      //   path: 'sandbox',
+      //   title: 'Sandbox',
+      //   component: SandboxComponent
+      // },
+      // {
+      //   path: 'blogs',
+      //   title: 'Blogs',
+      //   component: BlogsComponent,
+      // },
+      // {
+      //   path: 'blogs/:index',
+      //   title: 'Blog',
+      //   component: BlogComponent
+      // },
       {
         path: 'privacy',
         children: [
