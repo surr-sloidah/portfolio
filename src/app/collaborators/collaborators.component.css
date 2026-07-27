@@ -22,34 +22,35 @@ p {
     width: 100%;
 }
 
-.game {
+.collaborator {
     display: flex;
     position: relative;
     justify-content: space-around;
 }
 
-.game-text {
+.collaborator-text {
     width: 80%;
 }
 
-.game-image {
+.collaborator-image {
     display: flex;
     justify-content: right;
     align-items: center;
     width: 20%;
 }
 
-.game-image img {
-    width: 100%;
-    height: auto;
-}
-
 a {
-    color: white;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     transition: all 0.125s;
+    cursor: pointer;
 }
 
 a:hover {
     color: rgb(255, 136, 136);
+}
+
+#middle {
+    margin-left: 16px;
+    margin-right: 16px;
 }

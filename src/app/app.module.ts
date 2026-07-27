@@ -20,6 +20,9 @@ import { BlogsComponent } from './blogs-page/blogs.component';
 import { provideRouter } from '@angular/router';
 import { BlogComponent } from './blog/blog.component';
 import { BuddyPrivacyPolicyComponent } from './games/buddy_privacypolicy/buddy_privacypolicy.component';
+import { EdenComponent } from './games/eden/eden.component';
+import { CollaboratorsComponent } from './collaborators/collaborators.component';
+import { SocialsComponent } from './socials/socials.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { BuddyPrivacyPolicyComponent } from './games/buddy_privacypolicy/buddy_p
     FumblingWizardComponent,
     SlaughterLandsComponent,
     GoobersComponent,
-    SandboxComponent
+    SandboxComponent,
+    EdenComponent,
+    CollaboratorsComponent,
+    SocialsComponent
   ],
   imports: [
     BrowserModule,
